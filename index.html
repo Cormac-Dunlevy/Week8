@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!--The following lines are comments
+	Author: 			Cormac Dunlevy
+	Date Created:		26/03/2020
+	Page Description:	Week 8 Form
+-->	
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Form Page">
+	<meta name="keywords" content="form, name, address, e-mail, gender, submit, reset, query, heard of us">
+	<meta name="author" content="Cormac Dunlevy">
+	<title>Form Page</title>
+	<link rel="stylesheet" type="text/css" href="styles/mainstyles.css"/>
+</head>
+<body>
+	<header>
+        <p>Any queries or feedback please Complete and Submit</p>
+	</header>
+	<main>
+        <section>
+            <h2>Please enter the following information:</h2>
+            <form action=" http://year1.ccpdev.me/FormTest.php" method="get">
+                <label for="first_name">First Name:<span class="required"> * </span></label>
+                <input type="text" name="first_name" id="first_name" autofocus required><br>
+                <label for="last_name">Last Name:<span class="required"> * </span></label>
+                <input type="text" name="last_name" id="last_name" autofocus required><br>
+                <label for="email">Email:<span class="required"> * </span></label>
+                <input type="email" name="email" id="email" required placeholder="johnsmith@example.com"><br>
+                
+                <label for="gender">Gender:</label>
+                <input type="radio" id="gender" value="male">Male
+                <input type="radio" id="gender" value="female">Female
+                <input type="radio" id="gender" value="other" checked>Other<br>
+                
+                <label for="internet">Heard of us:</label>
+                <fieldset>
+                    <input type="checkbox" id="internet" value="internet" checked> Internet <br>
+                    <input type="checkbox" class="marginl" id="hear" name="paper"> Newspaper <br>
+                    <input type="checkbox" class="marginl" id="hear" name="friend"> Friend <br>
+                    <input type="checkbox" class="marginl" id="hear" name="Add" value="Add"> Others <br>
+                </fieldset>
+                <br>
+                <label for="message">Query  :   </label>
+                
+                <textarea cols="40" rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength="200"></textarea>
+                
+                <input type="submit" name="submit" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset">
+            </form>
+            <p style="margin-left: 138px"><span class="required"> * <em> indicates a required field</em></span></p>
+        </section>
+	</main>
+	<footer>	
+        <h3>&copy; 2020 Cormac Dunlevy</h3>
+	</footer>
+</body>
+</html>
